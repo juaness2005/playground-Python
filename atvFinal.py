@@ -1,6 +1,5 @@
 import random
 
-
 def jogoVelha():
     tamanho = 3
     placarX = 0
@@ -18,7 +17,7 @@ def jogoVelha():
         tabuleiro = [[" " for _ in range(tamanho)] for _ in range(tamanho)]
 
 
-        print("Seja bem-vindo(a) ao Jogo da Velha")
+        print("Seja bem-vindo(a) ao Jogo da Velha 👵")
 
 
         while acertos < totalJogadas:
@@ -100,7 +99,7 @@ def megaSena():
         else:
             sorteio[numero] = 1
    
-    print("Seja bem-vindo(a) ao jogo da Mega Sena")
+    print("Seja bem-vindo(a) ao jogo da Mega Sena 🎰")
     print("Digite seus 6 números (de 1 a 60): ")
 
 
@@ -128,11 +127,11 @@ def megaSena():
 
 
     if acertos == 6:
-        print("Você ganhou o prêmio principal")
+        print("🏆 Você ganhou o prêmio principal 🏆")
     elif acertos == 5:
-        print("Você acertou a quina")
+        print("🎉 Você acertou a quina 🎉")
     elif acertos == 4:
-        print("Você ganhou a quadra")
+        print("🎈 Você ganhou a quadra 🎈")
     else:
         print("Você não teve acertos suficientes")
 
@@ -283,7 +282,7 @@ def imPar():
     placarSistema = 0
 
 
-    print("Seja bem-vindo(a) ao jogo do Ímpar ou Par")
+    print("Seja bem-vindo(a) ao jogo do Ímpar ou Par ☝✌")
 
 
     while True:
@@ -367,7 +366,7 @@ def ppt():
         
         match(opcaoJogador):
             case 1:
-                print("Você escolheu Pedra 🪨")
+                print("Você escolheu Pedra 🌑")
             case 2:
                 print("Você escolheu Papel 📜")
             case 3:
@@ -379,7 +378,7 @@ def ppt():
         opcaoSistema = random.randint(1, 3)
         
         if (opcaoSistema == 1):
-            print("O sistema escolheu Pedra 🪨")
+            print("O sistema escolheu Pedra 🌑")
         elif (opcaoSistema == 2):
             print("O sistema escolheu Papel 📜")
         else:
@@ -390,7 +389,7 @@ def ppt():
         elif(opcaoJogador == 1 and opcaoSistema == 3 or 
              opcaoJogador == 2 and opcaoSistema == 1 or 
              opcaoJogador == 3 and opcaoSistema == 2):
-            print("PARABÉNS, você venceu  🎉✨")
+            print("PARABÉNS, você venceu  🎉")
             placarJogador += 1
         else:
             print("POXA!! Você perdeu!!")
@@ -451,7 +450,7 @@ def adivinhacao():
     }
     
     while True:
-        print("Seja bem-vindo(a) ao jogo da Adivinhação")
+        print("Seja bem-vindo(a) ao jogo da Adivinhação ✨")
         print("Escolha um tema do Jogo de Adivinhação: ")
         print("1. Desenvolvimento de Sistemas")
         print("2. Jogos")
@@ -526,4 +525,3 @@ def menu():
             continue
     
 menu()
-
